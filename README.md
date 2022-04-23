@@ -12,6 +12,7 @@ Which regression model can best accurately predict the number of streams a song 
 ## Files in Repository
 For a  detailed walkthrough, please view the source code in order from:
 1. Data Cleaning and Exploratory Analysis
+   (To view the Plotly graphs, do download and rerun the Python Notebook on your local system. Otherwise,       they can be found in our presentation slides)
 2. Model 1: Linear Regression
 3. Model 2: Random Forest Regression
 4. Model 3: Gradient Boosted Regression
@@ -25,7 +26,8 @@ With similar prediction accuracies, but faster model building, Random Forest Reg
 
 ## What have we learnt from this project
 - Identifying and cleaning of invalid data from a dataset through exploration of data
-- Conversion of a catergorical type value to numerical type, through the use of One-Hot Encoding and Label Encoding
+- Conversion of a categorical type value to numerical type, through the use of One-Hot Encoding and Label Encoding
+- Learnt to visualise statistical data using Plotly
 - Random Forest Regression
 - Gradient Boosted Regression
 - Cross-validation of data for the tuning of hyper-parameters
