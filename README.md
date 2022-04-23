@@ -11,7 +11,7 @@ Which regression model can best accurately predict the number of streams a song 
 
 ## Files in Repository
 For a  detailed walkthrough, please view the source code in order from:
-1. Data Extraction and Exploratory Analysis
+1. Data Cleaning and Exploratory Analysis
 2. Model 1: Linear Regression
 3. Model 2: Random Forest Regression
 4. Model 3: Gradient Boosted Regression
