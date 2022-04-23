@@ -18,7 +18,7 @@ For a  detailed walkthrough, please view the source code in order from:
 4. Model 3: Gradient Boosted Regression
 
 ## Conclusion
-With the help of r^2 values (for Linear Regression) and Mean Absolute Percentage Error (for Random Forest and Gradient Boosted Regression), we were able to conclude the high accuracy obtained for predicting total number of streams a song will garner based on its attributes using either Random Forest Regression or the Gradient Boosted Regression. The accuracy both models showed on the train and test datasets achieve a very high accuracy of above 90%. 
+With the help of R^2 values (for Linear Regression) and Mean Absolute Percentage Error (for Random Forest and Gradient Boosted Regression), we were able to conclude the high accuracy obtained for predicting total number of streams a song will garner based on its attributes using either Random Forest Regression or the Gradient Boosted Regression. The accuracy both models showed on the train and test datasets achieve a very high accuracy of above 90%. 
 
 Though the differences in accuracy from both models are mostly insignificant, the deciding factor of which model is best lies it its time efficiency. Random Forest Regression edges out on its efficiency in bulding the model, with an average runtime of 20 seconds when tuning the hyper-parameters, compared to that of Gradient Boosted Regression which took an average of 10 minutes.
 
