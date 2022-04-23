@@ -31,9 +31,11 @@ With similar prediction accuracies, but faster model building, Random Forest Reg
 - Cross-validation of data for the tuning of hyper-parameters
 
 ## Contributors
-- @Jovin2525 (Jovin Ng Zu Wei) -
-- @haofah14 (Lam Hao Fah) - 
-- @yauuuuuu (Ng Shang Yau) - 
+- @Jovin2525 (Jovin Ng Zu Wei) 
+- @haofah14 (Lam Hao Fah) 
+- @yauuuuuu (Ng Shang Yau) 
+
+The three of us worked tirelessly together to complete every aspect of this project. Each of us contributed a fair share and we are happy with the final outcome.
 
 ## References
 - https://www.forbes.com/sites/evaamsen/2021/02/27/coronamusic-gives-people-a-sense-of-belonging-according-to-research/?sh=64b584df131d
