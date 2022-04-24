@@ -1,4 +1,6 @@
-# SC1015-Mini-Project
+![alt text](https://storage.googleapis.com/pr-newsroom-wp/1/2020/03/Header.png)
+
+# SC1015-Mini-Project-Group 8
 Repository for NTU Module SC1015 Mini-Project
 
 ## About
@@ -28,11 +30,13 @@ With similar prediction accuracies, but faster model building, Random Forest Reg
 
 ## What have we learnt from this project
 - Identifying and cleaning of invalid data from a dataset through exploration of data
+- Data Visualisation through recommended Plotly
 - Conversion of a categorical type value to numerical type, through the use of One-Hot Encoding and Label Encoding
-- Learnt to visualise statistical data using Plotly
 - Random Forest Regression
 - Gradient Boosted Regression
 - Cross-validation of data for the tuning of hyper-parameters
+- Different metrics to analyse model accuracy such as MAPE
+- How to determine, with reasons, which model is most appropriate
 
 ## Contributors
 - @Jovin2525 (Jovin Ng Zu Wei) 
