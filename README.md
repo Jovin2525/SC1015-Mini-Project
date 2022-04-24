@@ -12,7 +12,7 @@ As such, it is ever more so difficult for budding artistes to be able to identif
 Which regression model can best accurately predict the number of streams a song will receive based on a song's characteristics?
 
 ## Files in Repository
-For a  detailed walkthrough, please view the source code in order from:
+For a detailed walkthrough, please view the source code in order from:
 1. Data Cleaning and Exploratory Analysis
 
    - Due to GitHub's static render of notebooks, to view the Plotly graphs, do download and rerun the Python Notebook on a local system. 
@@ -20,12 +20,12 @@ For a  detailed walkthrough, please view the source code in order from:
    
 2. Model 1: Linear Regression
 
-   - Linear Regression was first used to predict song streams using "Streams" as the response variable. However, due to low correlation between "Streams" and the other numerical dependent variables, with most not exceeding an absolute value correlation of 0.1, it seemed that our regression problem is not linearly related. Additionally, when the model was fit, very low R^2 values of 0.18 and 0.12 were achieved for our train and test datasets respectively. As such, we decided to model our regression problem using other non-linear regression problems to see where that would take us.
+   - Linear Regression was first used to predict song streams using "Streams" as the response variable. However, due to low correlation between "Streams" and the other numerical predictor variables, with most not exceeding an absolute correlation value of 0.1, it seemed that our regression problem is not linearly related. Additionally, when the model was fit, very low R^2 values of 0.18 and 0.12 were achieved for our train and test datasets respectively. As such, we decided to model our regression problem using other non-linear regression methodologies to see where that would take us.
 
 3. Model 2: Random Forest Regression
   
-   - Random Forest Regression was used to predict song streams through the use of decision trees. Initially, using an evaluation function,  we were able to achieve a high accuracy of 91.74% for our base model. Not satisfied, we tried to tune our hyperparameters further using Grid Search Cross Validation. However, the tuned model only achieved an insignificant improvement of 0.37%. Though the improvement between the tuned model and the base model was insignificant, the MSE, RMSE and MAPE all improved qutie a bit from the linear model. The data points were also much better fitted under the random forest model. Hence, we concluded the random forest model to be undoubtedly better than the linear model. 
-   - To further analyse other models, we decided to analyse Gradient Boosted Regression
+   - Random Forest Regression was used to predict song streams through the use of decision trees. Initially, using an evaluation function, we were able to achieve a high accuracy of 91.74% for our base model. Not satisfied, we tried to tune our hyperparameters further using Grid Search Cross Validation. However, the tuned model only achieved an insignificant improvement of 0.37%. Though the improvement between the tuned model and the base model was insignificant, the MSE, RMSE and MAPE all improved quite a bit from the linear model. The data points were also much better fitted under the random forest model. Hence, we concluded the random forest model to be undoubtedly better than the linear model. 
+   - Moving on, we decided to analyse our problem using Gradient Boosted Regression.
    
 4. Model 3: Gradient Boosted Regression
    
@@ -35,7 +35,7 @@ For a  detailed walkthrough, please view the source code in order from:
 ## Conclusion
 With the help of R^2 values (for Linear Regression) and Mean Absolute Percentage Error (for Random Forest and Gradient Boosted Regression), we were able to conclude the high accuracy obtained for predicting total number of streams a song will garner based on its attributes using either Random Forest Regression or the Gradient Boosted Regression. The accuracy both models showed on the train and test datasets achieve a very high accuracy of above 90%. 
 
-Though the differences in accuracy from both models are mostly insignificant, the deciding factor of which model is best lies it its time efficiency. Random Forest Regression edges out on its efficiency in bulding the model, with an average runtime of 20 seconds when tuning the hyper-parameters, compared to that of Gradient Boosted Regression which took an average of 10 minutes.
+Though the differences in accuracy from both models are mostly insignificant, the deciding factor of which model is best lies it its time efficiency. Random Forest Regression edges out on its efficiency in building the model, with an average runtime of 20 seconds when tuning the hyper-parameters, compared to that of Gradient Boosted Regression which took an average of 10 minutes.
 
 With similar prediction accuracies, but faster model building, Random Forest Regression is thus chosen as the preferred model to predict the number of streams a song will receive based on its characteristics.
 
@@ -54,7 +54,7 @@ With similar prediction accuracies, but faster model building, Random Forest Reg
 - @haofah14 (Lam Hao Fah) 
 - @yauuuuuu (Ng Shang Yau) 
 
-The three of us worked tirelessly together to complete every aspect of this project. Each of us contributed a fair share and we are happy with the final outcome :)
+The three of us worked tirelessly together to complete every aspect of this project, from ideation, to coding, and lastly to the presentation. Each of us contributed a fair share and we are happy with the final outcome. We have also built a solid friendship through this project.
 
 ## Dataset 
 - https://www.kaggle.com/datasets/sashankpillai/spotify-top-200-charts-20202021
@@ -64,4 +64,4 @@ The three of us worked tirelessly together to complete every aspect of this proj
 - https://towardsdatascience.com/random-forest-in-python-24d0893d51c0
 - https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74
 - https://machinelearningmastery.com/gradient-boosting-machine-ensemble-in-python/
-
+- https://vitalflux.com/gradient-boosting-regression-python-examples/
