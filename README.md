@@ -9,7 +9,7 @@ Our team's objective for this Mini-Project is on the Spotify Top 200 Charts from
 As such, it is ever more so difficult for budding artistes to be able to identify what songs will be streamed more. It would be good for artists to be able to gauge their song streams before releasing their music, i.e. 'test the waters'.
 
 ## Problem Statement
-Which regression model can best accurately predict the number of streams a song will receive based on a song's characteristics.
+Which regression model can best accurately predict the number of streams a song will receive based on a song's characteristics?
 
 ## Files in Repository
 For a  detailed walkthrough, please view the source code in order from:
@@ -20,13 +20,17 @@ For a  detailed walkthrough, please view the source code in order from:
    
 2. Model 1: Linear Regression
 
-   - Linear Regression was first used to predict song streams using "Streams" as the response variables. However, due to low correlation between "Streams" and the other numerical dependent variables, with most not exceeding an absolute value correlation of 0.1, it seemed our regression problem is not linearly related. Additionally, when the model was fit, very low R^2 values of 0.18 and 0.12 were achieved for our train and test datasets respectively. As such, we decided to model our regression problem using other non-linear regression problems to see where that would take us.
+   - Linear Regression was first used to predict song streams using "Streams" as the response variable. However, due to low correlation between "Streams" and the other numerical dependent variables, with most not exceeding an absolute value correlation of 0.1, it seemed that our regression problem is not linearly related. Additionally, when the model was fit, very low R^2 values of 0.18 and 0.12 were achieved for our train and test datasets respectively. As such, we decided to model our regression problem using other non-linear regression problems to see where that would take us.
 
 3. Model 2: Random Forest Regression
-   - Random Forest Regression was used to predict song streams through the use of decision trees. Initially, using an evaluation function,  we were able to achieve a high accuracy of 91.74% for our base model. Not satisfied, we tried to tune our hyperparameters further using Grid Search Cross Validation. However, the tuned model only achieved an insignificant improvement of 0.37%. Though the improvement between the tuned model and the base model was insignificant, the RMSE, MSE and MAPE all improved qutie a bit from the linear model. The data points were also much better fitted under the random forest model. Hence, we concluded the random forest model to be undoubtedly better than the linear model. 
+  
+   - Random Forest Regression was used to predict song streams through the use of decision trees. Initially, using an evaluation function,  we were able to achieve a high accuracy of 91.74% for our base model. Not satisfied, we tried to tune our hyperparameters further using Grid Search Cross Validation. However, the tuned model only achieved an insignificant improvement of 0.37%. Though the improvement between the tuned model and the base model was insignificant, the MSE, RMSE and MAPE all improved qutie a bit from the linear model. The data points were also much better fitted under the random forest model. Hence, we concluded the random forest model to be undoubtedly better than the linear model. 
    - To further analyse other models, we decided to analyse Gradient Boosted Regression
    
 4. Model 3: Gradient Boosted Regression
+   
+   - Gradient Boosted Regression (GBR) was the third model we used to predict song streams. GBR also utilizes an ensemble of decision tress, but differs from Random Forest in terms of the order and way the results of each tree are combined. Instead of having random samples to train individual trees such like Random Forest, GBR builds one tree at a time where each new tree helps to correct errors made by the previously trained tree. By using our evaluation function, we achieved an initial accuracy of 82.71%. We then tuned our hyperparameters using Grid Search Cross Validation as well. The tuned model returned an accuracy of 91.42%, showcasing an improvement of 10.54%. The differences in MSE, RMSE and MAPE were also significant as compared to the linear model. The data points were also much better fitted under the Gradient Boosted Regression.
+   - Next, we compare between the 3 regression models we have used.
 
 ## Conclusion
 With the help of R^2 values (for Linear Regression) and Mean Absolute Percentage Error (for Random Forest and Gradient Boosted Regression), we were able to conclude the high accuracy obtained for predicting total number of streams a song will garner based on its attributes using either Random Forest Regression or the Gradient Boosted Regression. The accuracy both models showed on the train and test datasets achieve a very high accuracy of above 90%. 
@@ -37,7 +41,7 @@ With similar prediction accuracies, but faster model building, Random Forest Reg
 
 ## What have we learnt from this project
 - Identifying and cleaning of invalid data from a dataset through exploration of data
-- Data Visualisation through recommended Plotly
+- Interactive Data Visualisation through Plotly (recommended)
 - Conversion of a categorical type value to numerical type, through the use of One-Hot Encoding and Label Encoding
 - Random Forest Regression
 - Gradient Boosted Regression
@@ -50,7 +54,7 @@ With similar prediction accuracies, but faster model building, Random Forest Reg
 - @haofah14 (Lam Hao Fah) 
 - @yauuuuuu (Ng Shang Yau) 
 
-The three of us worked tirelessly together to complete every aspect of this project. Each of us contributed a fair share and we are happy with the final outcome.
+The three of us worked tirelessly together to complete every aspect of this project. Each of us contributed a fair share and we are happy with the final outcome :)
 
 ## Dataset 
 - https://www.kaggle.com/datasets/sashankpillai/spotify-top-200-charts-20202021
