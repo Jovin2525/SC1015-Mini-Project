@@ -13,7 +13,7 @@ Which regression model can best accurately predict the number of streams a song 
 For a  detailed walkthrough, please view the source code in order from:
 1. Data Cleaning and Exploratory Analysis
 
-   (Due to GitHub's static render of notebooks, to view the Plotly graphs, do download and rerun the Python Notebook on a local system. Otherwise, they can be found in our presentation slides or can be viewed through this link: https://nbviewer.org/github/Jovin2525/SC1015-Mini-Project/tree/main/)
+   (Due to GitHub's static render of notebooks, to view the Plotly graphs, do download and rerun the Python Notebook on a local system. Otherwise, they can be found in our presentation slides or can be viewed through this link: https://nbviewer.org/github/Jovin2525/SC1015-Mini-Project/tree/main/Group%208/Codes/)
    
 2. Model 1: Linear Regression
 3. Model 2: Random Forest Regression
