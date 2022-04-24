@@ -6,10 +6,10 @@ Repository for NTU Module SC1015 Mini-Project
 ## About
 Our team's objective for this Mini-Project is on the Spotify Top 200 Charts from 2020-2021. With the increasing interconnectedness due to globalisation and the emergence of Covid-19, music preferences have seen a major shift. This is evident with the coming of the term "corona-music". 
 
-As such, it is ever more so difficult for budding artistes to be able to identify what makes a song receive more streams.
+As such, it is ever more so difficult for budding artistes to be able to identify what songs will be streamed more. It would be good for artists to be able to gauge their song streams before releasing their music, i.e. 'test the waters'.
 
 ## Problem Statement
-Which regression model can best accurately predict the number of streams a song will receive based on a song's characteristics.
+Hence, which regression model can best accurately predict the number of streams a song will receive based on a song's characteristics.
 
 ## Files in Repository
 For a  detailed walkthrough, please view the source code in order from:
