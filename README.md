@@ -39,7 +39,7 @@ With similar prediction accuracies, but faster model building, Random Forest Reg
 - How to determine, with reasons, which model is most appropriate
 
 ## Contributors
-- @Jovin2525 (Jovin Ng Zu Wei) 
+- @Jovin2525 (Ng Zu Wei, Jovin) 
 - @haofah14 (Lam Hao Fah) 
 - @yauuuuuu (Ng Shang Yau) 
 
