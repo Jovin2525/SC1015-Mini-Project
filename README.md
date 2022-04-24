@@ -15,10 +15,17 @@ Which regression model can best accurately predict the number of streams a song 
 For a  detailed walkthrough, please view the source code in order from:
 1. Data Cleaning and Exploratory Analysis
 
-   (Due to GitHub's static render of notebooks, to view the Plotly graphs, do download and rerun the Python Notebook on a local system. Otherwise, they can be found in our presentation slides or can be viewed through this link: https://nbviewer.org/github/Jovin2525/SC1015-Mini-Project/tree/main/Group%208/Codes/)
+   - Due to GitHub's static render of notebooks, to view the Plotly graphs, do download and rerun the Python Notebook on a local system. 
+   - Otherwise, they can be found in our presentation slides or can be viewed through this link: https://nbviewer.org/github/Jovin2525/SC1015-Mini-Project/tree/main/Group%208/Codes/
    
 2. Model 1: Linear Regression
+
+   - Linear Regression was first used to predict song streams using "Streams" as the response variables. However, due to low correlation between "Streams" and the other numerical dependent variables, with most not exceeding an absolute value correlation of 0.1, it seemed our regression problem is not linearly related. Additionally, when the model was fit, very low R^2 values of 0.18 and 0.12 were achieved for our train and test datasets respectively. As such, we decided to model our regression problem using other non-linear regression problems to see where that would take us.
+
 3. Model 2: Random Forest Regression
+   - Random Forest Regression was used to predict song streams through the use of decision trees. Initially, using an evaluation function,  we were able to achieve a high accuracy of 91.74% for our base model. Not satisfied, we tried to tune our hyperparameters further using Grid Search Cross Validation. However, the tuned model only achieved an insignificant improvement of 0.37%. Though the improvement between the tuned model and the base model was insignificant, the RMSE, MSE and MAPE all improved qutie a bit from the linear model. The data points were also much better fitted under the random forest model. Hence, we concluded the random forest model to be undoubtedly better than the linear model. 
+   - To further analyse other models, we decided to analyse Gradient Boosted Regression
+   
 4. Model 3: Gradient Boosted Regression
 
 ## Conclusion
